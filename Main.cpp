@@ -1,9 +1,12 @@
 #include <iostream>
 #include "Helpers.h"
-#define PI 3.14
 
 using namespace std;
 int main()
 {
-	cout << "Result = " << square(5, 10) << endl << "Hello, World!\n";
+	setlocale(LC_ALL, "Russian");
+	int a, b;
+	cout << "¬ведите первое число: "; cin >> a;
+	cout << "¬ведите второе число: "; cin >> b;
+	cout << "\n–езультат: (" << a << " + " << b << ")^2 = " << square(a, b) << endl;
 }
